@@ -1,55 +1,37 @@
-#include<iostream>
+//
+//  main.cpp
+//  cppWrite
+//
+//  Created by IanTang on 2020/1/2.
+//  Copyright Â© 2020 IanTang. All rights reserved.
+//
+
 #include<cstdio>
-//#include<cmath>
-#include<algorithm>
+#include<iostream>
+#include<cmath>
 #include<cstring>
-#include<cstdlib>
-#define NN 1000000007
+#include<algorithm>
 using namespace std;
-long long pow(long long n,long long a){
-	long long ans=1;
-	for(int i=0;i<a;i++){
-		ans=n*ans;
-		ans=ans%NN;
-	}
-	return ans;
-}
-long long mipow(long long n,long long a){
-	long long ans=1;
-	while(a>0){
-		if(a&1){
-			ans=ans*n%NN;
-		}
-		n=n*n %NN;
-		a>>=1;
-	}
-	return ans;
+
+typedef long long ll;
+ll mipow(ll n,ll b, ll a){
+    ll ans=1;
+    while(n>0){
+        //if n is jishu;
+        if(n&1){
+            ans=ans*a%b;
+        }
+        a=a*a%b;
+        n>>=1;//means /2;
+    }
+    return ans;
 }
 int main()
 {
-	long long n,a,b;
-	long long ans=1;
-	cin>>n>>a>>b;
-	a=a %b;
-	n=n %NN;
-	/*
-	while(1){
-		ans=ans*pow(n,a/2);
-		ans=ans%NN;
-		a=a/2;
-		if(a==1){
-			break;
-		}
-	}
-	//aÎªÆæÊý 
-	if(a&1){
-		ans=ans*n;
-		ans%=NN;
-	}
-	*/
-	
-	ans=mipow(n,a);
-	printf("%lld",ans-1);
-	//cout<<a;
-	return 0;
+    long long n,a,b;//a's pow n,then % b;
+    cin>>n>>a>>b;
+    ll ans;
+    ans=mipow(n,a,b);
+    cout<<ans;
+    return 0;
 }
