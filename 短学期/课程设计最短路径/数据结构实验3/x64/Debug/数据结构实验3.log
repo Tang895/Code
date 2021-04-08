@@ -1,0 +1,12 @@
+﻿  main.cpp
+C:\Users\ian-laptop\Desktop\课程设计\数据结构实验3\graph.h(153,1): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\ian-laptop\Desktop\课程设计\数据结构实验3\graph.h(145): message : 在编译 类 模板 成员函数“void Graph<int>::delete_plane_edge(std::string,std::string)”时
+C:\Users\ian-laptop\Desktop\课程设计\数据结构实验3\main.cpp(178): message : 查看对正在编译的函数 模板 实例化“void Graph<int>::delete_plane_edge(std::string,std::string)”的引用
+C:\Users\ian-laptop\Desktop\课程设计\数据结构实验3\main.cpp(203): message : 查看对正在编译的 类 模板 实例化“Graph<int>”的引用
+C:\Users\ian-laptop\Desktop\课程设计\数据结构实验3\graph.h(135,1): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\ian-laptop\Desktop\课程设计\数据结构实验3\graph.h(127): message : 在编译 类 模板 成员函数“void Graph<int>::delete_train_edge(std::string,std::string)”时
+C:\Users\ian-laptop\Desktop\课程设计\数据结构实验3\main.cpp(160): message : 查看对正在编译的函数 模板 实例化“void Graph<int>::delete_train_edge(std::string,std::string)”的引用
+C:\Users\ian-laptop\Desktop\课程设计\数据结构实验3\graph.h(120,40): warning C4244: “return”: 从“double”转换到“int”，可能丢失数据
+C:\Users\ian-laptop\Desktop\课程设计\数据结构实验3\graph.h(115): message : 在编译 类 模板 成员函数“int Graph<int>::get_plane_distance(std::string,std::string)”时
+C:\Users\ian-laptop\Desktop\课程设计\数据结构实验3\graph.h(150): message : 查看对正在编译的函数 模板 实例化“int Graph<int>::get_plane_distance(std::string,std::string)”的引用
+  数据结构实验3.vcxproj -> C:\Users\ian-laptop\Desktop\课程设计\x64\Debug\课程设计.exe
